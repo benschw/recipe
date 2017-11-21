@@ -37,6 +37,5 @@
 
 ## Recipe Notes
 
-* If you like a dryer stuffing I recommend making the cornbread 24 hours ahead of time and let it sit out on the counter overnight. The longer the cornbread can dry out, the better it will absorb the broth mixture. 
-
-** The amount of liquid added is up to your personal taste. Add a little at a time - you can always add more, but you can't take it away.
+- * If you like a dryer stuffing I recommend making the cornbread 24 hours ahead of time and let it sit out on the counter overnight. The longer the cornbread can dry out, the better it will absorb the broth mixture. 
+- ** The amount of liquid added is up to your personal taste. Add a little at a time - you can always add more, but you can't take it away.
