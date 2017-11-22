@@ -4,10 +4,10 @@ http://allrecipes.com/recipe/suzys-mashed-red-potatoes/
 
 ## Ingredients
 
-- 4 lb small red potatoes, quartered
-- 1 c butter
-- 1 c milk
-- 1/2 c sour cream
+- 2 lb small red potatoes, quartered
+- 1/2 c butter
+- 1/2 c milk
+- 1/4 c sour cream
 
 ## Directions
 
