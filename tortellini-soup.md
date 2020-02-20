@@ -17,7 +17,7 @@ https://www.tasteofhome.com/recipes/rustic-italian-tortellini-soup/
 
 
 1. Saute sausage slices, set aside
-2. In a ditch oven, saute onion (about 5 min)
+2. In a Dutch oven, saute onion (about 5 min)
 3. Add red pepper flakes and garlic, saute another minute
 4. Add tomatoes, water, stock, and pepper; bring to a boil
 5. Stir in tortellini, cook 3-4min (until almost done according to package)
