@@ -1,3 +1,8 @@
+---
+title: "Mashed Potatoes"
+date: 2019-11-01T16:21:22-05:00
+---
+
 # Ingredients
 - 1lb potatoes
 - 4tbsp butter

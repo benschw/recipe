@@ -1,7 +1,13 @@
-## Rustic Italian Tortellini Soup
+---
+title: Rustic Italian Tortellini Soup
+date: 2019-11-01T16:21:22-05:00
+---
+
+
 based on 
 https://www.tasteofhome.com/recipes/rustic-italian-tortellini-soup/
 
+### Ingredients
 
 - 4 Italian beyond sausages, sliced into eighths
 - 1 med yellow onion, chopped
@@ -15,6 +21,7 @@ https://www.tasteofhome.com/recipes/rustic-italian-tortellini-soup/
 - 1 tb finely chopped basil
 - 6oz (big handfull) of baby spinach
 
+### Instructions
 
 1. Saute sausage slices, set aside
 2. In a Dutch oven, saute onion (about 5 min)

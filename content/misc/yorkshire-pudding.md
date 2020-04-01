@@ -1,6 +1,11 @@
+---
+title: Yorkshire Pudding
+date: 2019-11-01T16:21:22-05:00
+---
+
 (http://veganrecipeclub.org.uk/vegetarian-recipe/little-vegan-yorkshire-puddings)
 
-Yorkshire Puddings (vegan)
+
 
 ## Ingredients
 - 90g/3oz vegan margarine, eg Pure, Suma, Biona

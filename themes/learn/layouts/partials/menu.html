@@ -54,7 +54,7 @@
           {{end}}
           {{$pages := ($currentNode.Scratch.Get "pages") }}
 
-          {{range $pages.ByDate.Reverse }}
+          {{range $pages.ByTitle }}
             {{template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
           {{end}}
 

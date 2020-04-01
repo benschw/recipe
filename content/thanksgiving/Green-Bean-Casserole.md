@@ -28,7 +28,7 @@ date: 2019-11-01T16:21:22-05:00
 - 1/16 teaspoon freshly ground black pepper
 - 1 3- ounce can of French fried onions
 
-### Directions
+## Directions
 - Beans: Bring the water to boil in a large pot. While it’s heating, cut up the beans. Add the salt and beans to the boiling water. Cover and cook for 6 minutes. Drain beans in a colander, and then spray for a minute with cold water to stop the cooking. Let them drain in the colander, shaking every now and then to get off all the water.
 - Sauce: Trim and discard the mushroom stems and chop the mushrooms into pieces. Spray a non-stick pan with canola oil and heat it. Add the mushrooms, garlic, cayenne, salt, and pepper. Cook until mushrooms are very soft and exude their juices. Whisk the flour into the vegetable broth and add to the mushrooms along with the sherry. Simmer, stirring, until mixture thickens. Add the soy creamer and simmer until thick, about 5 to 10 minutes. Adjust the seasonings and stir in the beans.
 - Topping: Put the bread, margarine, salt, and pepper into a food processor and pulse until crumbly. Pour into a bowl and add the onions. Stir to combine.

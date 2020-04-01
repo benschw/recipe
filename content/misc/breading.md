@@ -11,7 +11,6 @@ date: 2019-11-01T16:21:22-05:00
 	- 3 tbsp egg replacer & 6 tbsp water
 - 1c milk
 - 1/4c apple cider vinegar
-
 - breading
 	- fried oysters
 		- 1/2c panko
