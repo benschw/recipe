@@ -1,4 +1,7 @@
-# Roasted Beet Soup
+---
+title: Roasted Beet Soup
+date: 2019-11-01T16:21:22-05:00
+---
 
 - http://mycaliforniaroots.com/vegan-roasted-beet-soup-recipe/
 - http://www.food.com/recipe/creamy-beet-soup-without-all-the-cream-300119

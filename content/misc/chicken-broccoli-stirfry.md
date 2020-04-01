@@ -1,4 +1,8 @@
-## Chicken and Broccoli Stirfry
+---
+title: Chicken and Broccoli Stirfry
+date: 2019-11-01T16:21:22-05:00
+---
+
 Makes 4 servings, with rice
 
 Time: 20 to 30 minutes

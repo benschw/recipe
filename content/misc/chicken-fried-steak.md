@@ -1,3 +1,8 @@
+---
+title: Chicken fried Steak
+date: 2019-11-01T16:21:22-05:00
+---
+
 ## ingredients
 - seitan
   - 1c wheat gluten

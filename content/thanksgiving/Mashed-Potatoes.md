@@ -1,4 +1,9 @@
-# Mashed Potatoes
+---
+title: Mashed Potatoes
+date: 2019-11-01T16:21:22-05:00
+---
+
+
 
 http://allrecipes.com/recipe/suzys-mashed-red-potatoes/
 

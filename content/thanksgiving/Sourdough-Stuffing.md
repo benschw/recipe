@@ -1,4 +1,8 @@
-# Stuffing
+---
+title: Sourdough Stuffing
+date: 2019-11-01T16:21:22-05:00
+---
+
 
 http://www.seriouseats.com/recipes/2008/11/mark-bittman-favorite-bread-stuffing-recipe.html
 

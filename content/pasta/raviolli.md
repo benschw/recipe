@@ -1,29 +1,36 @@
-﻿
+﻿---
+title: Raviolli
+date: 2019-11-01T16:21:22-05:00
+---
 
-Beaufort, Comté, and Fontina cheeses
-béchamel sauce, 
-nutmeg, 
-garlic, 
-Riesling, 
-Single green peppercorn
+## mixes
 
-sauce 
-mushroom stock, 
-white wine, 
-green peppercorns, 
-butter
+- Beaufort, Comté, and Fontina cheeses
+- béchamel sauce, 
+- nutmeg, 
+- garlic, 
+- Riesling, 
+- Single green peppercorn
 
-sunchokes, 
-walnuts, 
-sautéed black trumpet mushrooms, 
-Brussels sprouts leaves, 
-caramelized pearl onions, 
-mustard greens
+	
+- sauce 
+- mushroom stock, 
+- white wine, 
+- green peppercorns, 
+- butter
 
 
-Filling:
+- sunchokes, 
+- walnuts, 
+- sautéed black trumpet mushrooms, 
+- Brussels sprouts leaves, 
+- caramelized pearl onions, 
+- mustard greens
 
-Pseudo-Vegan Béchamel
+
+## Filling:
+
+### Pseudo-Vegan Béchamel
 
 - 4 teaspoons vegetable oil
 - 2 tablespoons flour

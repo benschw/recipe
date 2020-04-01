@@ -1,4 +1,9 @@
-# Gnocchi with Cashew Truffle Cream Sauce
+---
+title: Gnocchi with Cashew Truffle Cream Sauce
+date: 2019-11-01T16:21:22-05:00
+---
+
+
 
 - http://www.savorysimple.net/pasta-with-cashew-truffle-cream-sauce/
 - http://sheeats.ca/2013/08/crispy-baked-leeks-good-crispy-kristy-not/
