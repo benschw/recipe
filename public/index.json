@@ -1,0 +1,274 @@
+[
+{
+	"uri": "/scratch/agile-arch/",
+	"title": "Agile Architecture",
+	"tags": [],
+	"description": "",
+	"content": " Individuals and interactions over processes and tools Shared understanding of the design It is important for a dev team to have a shared understanding of the vision and goals of an application and its design.\n A common understanding of an application\u0026rsquo;s design:  Helps to ensure that collaboration can occur with minimal friction Helps prevent false starts and wasted effort on divergent solutions Results in a leaner application that behaves more efficiently   Method  Maintain a high level design of the application that can be referenced. This design should be kept up to date as it evolves. Organize full team design sessions to help ensure that there is a shared understanding not just of how the application solves a problem, but why it does it in the way it does.  Software benefits from more than one set of eyes More than one developer should understand each software component and be involved in the process of bringing it to life.\n Software built by more than one developer benefits from:  The multiple experiences and backgrounds of its authors Constant discussion of a problem helps prevent fragile implementations and development efforts that get \u0026ldquo;stuck in a rut\u0026rdquo; Over time, it is easier to share knowledge about the component and ensure there are people available to work on it   Method  Pair programming or shared ownership over each software component ensures that the software is benefiting from a high degree of collaboration. Code Reviews can\u0026rsquo;t replace collaboration: a code review from an outside developer is useful for many reasons, but if the outside developer has an insuficient depth of knowledge regarding the piece of software they will be unable to effectively review how well the software meets its goals and the review may turn into a proofreading excercise.  Working software over comprehensive documentation Test your design early Trying to determine how all the components of a system will interact to acheive a project\u0026rsquo;s goals leads to a waterfall approach. This either necesitates rework when what we think we know changes, or else blind adherance to a plan without realizing that we are not longer solving problems in the most effective way.\n Regardless of how much up front work goes into planning an implementation, our understanding of the problem is likely to evolve and our software implementation should evolve along with it. Determining how something will work based on up front assumptions has dimishing returns while iterative planning and review allows for a design to be refined with the best possible information.  Method  Tracer bullet architecture (building out the scaffolding of the entire application before iterating on the implementation of its business logic) is one approach for ensuring that software works from day-one, can be grown and refined without deviating from the project\u0026rsquo;s goals, and that risk isn\u0026rsquo;t unnecessarily deferred. Build software iteratively rather than incrementally. (Compare to a printer vs. an artist: A printer creates a picture incrementally by drawing line by line starting at the top. An artist creates a picture iteratively by sketching the outline, then shading in the detail, and finally adding color and other final touches.)  With an iterative approach, designs and implementations can easily evolve as more is known. With an incremental approach, problems aren\u0026rsquo;t identified until later and course corrections require more rework.   Customer collaboration over contract negotiation Shared understanding of business objectives It is important for a team to have a shared understanding with the business regarding the vision and goals of a project.\n A common understanding of the business functions, domain knowledge, and nomenclature used to describe an application:  Ensures that the right features are built Enables developers to provide feedback regarding the assumptions of the business Facilitates an evolving solution that better meets the underlying goals of the application   Method  Make the development team aware of why they are building an application, not just what it should do Promote discussion between development and the business regarding requirements Collaborate on building a roadmap and requirements for beta, mvp, and beyond Perform regular demos to ensure development is tracking with the business vision  Responding to change over following a plan Build based on feedback from the system As software is built, our understanding of how it works changes and up front planning will likely diminish in relevance.\n The plan for building an application should evolve with our understanding of how our software is actually performing. As we learn more about the systems we are building our design and priorities should be updated to accomodate this new information. Software should be built to facilitate early feedback:  Understanding early how a design or integration plan stands up to actual implementation makes it easier to course correct and less likely to result in overly cumbersome interfaces that satisfy \u0026ldquo;what we thought we needed\u0026rdquo; instead of \u0026ldquo;what we actually need\u0026rdquo; When coupled components are developed separately and to a specification, the likelyhood that an impedence mismatch will be introduced and allowed to grow unchecked increases.   Method  Regular backlog grooming with design discussions ensure that designs and requirements are kept up to date with current information Implement continuous integration and continuous deployment:  Prevents drift in integration goals by shedding light on impedence mismatches quickly Brings design failures to light early so they can be corrected without creating an excess of rework. Brings design failures to light early so they can be corrected rather than being allowed to remain and solved for with work-arounds. Bugs are caught more quickly (though this is the least important benefit of CI/CD)  Effective use of automated testing facilitates more frequent integration and thus faster and more frequent feedback  Pay special attention to integrations with outside software The adoption of new technologies and integration with vendors is often the biggest source of risk for a project. In addition to bringing a design to life, it must be integrated with a system that may not behave in a way that is expected.\n The full cost of integrating with a vendor or new technology can\u0026rsquo;t be fully understood up front and won\u0026rsquo;t be until completed. If the assumptions about a vendor or new technology prove to be wrong, a new solution may need to be found.  Method  Integration with a vendor or new technology should be identified as higher risk and performed early. This will:  Remove the unknown cost of integration as soon as possible Bring the domain knowledge into the team\u0026rsquo;s shared understanding to ensure that development doesn\u0026rsquo;t procede with a blind spot Give adequate time to go back to the drawing board if the vendor or technology doesn\u0026rsquo;t work out  Use an existing technology instead. Does the problem being solved with a new technology really warrant the cost and risk of adopting a new technology?  Other Optimize for the platform, not the local problem The benefits of the consistency acheived through shared patterns and technologies often outweigh the benefits of a software design that is optimized for a specific problem.\n Consistent patterns, techniques, and technologies promote:  Systems that are understood and supportable by more people Less automation and implementation work to get off the ground Less risk from integrating with new software Systems that can more easily be kept up to date   Method  Determine if a similar problem has already been solved by another team When adopting a new technology, compare the pros and cons of using an existing technology. Are you accurately accounting for all the non-functional costs of bringing in new software?  "
+},
+{
+	"uri": "/scratch/",
+	"title": "Scratch",
+	"tags": [],
+	"description": "",
+	"content": " \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; HEAD\napply product mgmt to internal platforms - https://www.thoughtworks.com/radar/techniques/applying-product-management-to-internal-platforms  We often treat our internal platform as part of a shared domain rather than as a system with consumers. This leads to systems that end up with rough edges and loose ends requiring a more extensive domain understanding to use correctly or modify.\nBy managing these systems in the same way we would manage our products, with an emphasis on strong encapsulation and purposeful APIs, our internal systems will become more approachable and evolvable.\narch platform definition  Historic arch responsibilities:  app arch functional platform arch (product/software platform) non-functional platform arch (integration, composition, and deployment patterns and consistency)  non-functional platform arch  In the dc:  smaller footprint that arch was dialed into and capable of maintaining e.g. here is the complete list:  composition: http services integration: rest, rabbit, Nexus, openstack, openvz deploy: wedeploy, octopus, puppet ci: jenkins   In aws:  high degree of unchecked growth and diverging solutions multiple solutions to each problem out of date implementations hard or impossible to understand / document holistically   We are insulated from cascading complexity by the coordination of our past.  microservice example:  rapid growth led to many patterns and solutions enough engrained patterns that they could be re-wrangled with ccg and 1 dpk  correlary to ms example:  sns, sqs, dlq, IAM Dynamo, MySQL, Aurora, redshift, s3, Athena, serverless RDS lambdas number of dpks Jenkins vs gitlab   No platform arch moving forward?  is our current trajectory of decline in efficiency understood \u0026amp; appreciated? are we weathering the storm? Stick to centralized architecture  how can we mitigate damage?  is this the new normal?  should we lean into distributed architecture? give more autonomy and responsibility to teams/ groups of teams? realign architecture and cloudops teams?    @bryanl The secret to being a senior engineer: Focus on causes rather than symptoms\nThe secret to being a staff engineer: Enable your group to focus on causes rather than symptoms\nThe secret to being a principal level engineer: Enable your org to focus on causes rather than symptoms\narch  platform problem and strawman solution board to track:  projects unplanned work on hold vs on hold due to capacity  team tracking vs. individual tracking  Topics  wire-tap vs portfolio model for iniative MGMT  we each have our own buckets, what do we want to track as a team?   "
+},
+{
+	"uri": "/log/",
+	"title": "Log",
+	"tags": [],
+	"description": "",
+	"content": " TODO  FBase fiid overlap list prepare for maturity model discussion tuesday set up fiid ARB look at express gateway https://www.express-gateway.io/ php 7 project plan - https://jira.bancvue.com/browse/TR-584 talk with Juan about bulk data constraints / issues  https://confluence.bancvue.com/display/Architecture/Decision+-+How+to+serve+up+reporting+or+bulk+data+from+the+KLS  create confluence pages for dynamic structures (blurbs \u0026amp; products)  https://jira.bancvue.com/browse/TR-258  including client metadata in rest requests decision  https://confluence.bancvue.com/display/Architecture/Decision+-+How+to+best+include+client+metadata+in+internal+REST+requests  break REST standards updates into tasks PPOC-1790  done  write up sec ticket for rabbit msg encryption exemption  no encryption moving forward (within the vpc, over https) key rotation not necessary  time off request lattice training talk with shawn / karl about VueX, is this a gateway replacement? or ust ui framework figure out this doc\u0026hellip;  https://confluence.bancvue.com/display/Architecture/Decision+-+How+to+serve+up+reporting+or+bulk+data+from+the+KLS  fill out open enrollment schedule getting with satish for poc of lambda/ccg schedule sdlc topic for arch sync  https://confluence.bancvue.com/display/TEC/Project+Management+Process  create core-audit tech debt ticket need to meet w/ Mason \u0026amp; Satish to integrate lambda w/ ccg set up followup meeting w/ andrew to discuss process set up fiid / client id meeting (see 11\u0026frasl;5 arch notes) follow up with mason on dpk migration to gitlab core audit rest api to allow fkClient in addition to fiId?  "
+},
+{
+	"uri": "/scratch/posts/",
+	"title": "Posts",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/cheatsheets/",
+	"title": "Cheatsheets",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " home  https://twitter.com/dasharez0ne/status/1195080743875227650?s=19\n un-koala-fied\n Kloans google doc folder\n Arch Standup\n Arch Meeting Topics\n NL tech debt\n  "
+},
+{
+	"uri": "/log/12-04/",
+	"title": "12 04",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/scratch/ea-strategies/",
+	"title": "Ea Strategies",
+	"tags": [],
+	"description": "",
+	"content": " (from Mark Richards\u0026rsquo;s \u0026ldquo;EA fundamentals\u0026rdquo; class)\nEA Strategies \u0026amp; Standards  Enterprise Architects (standards) Solutions Architects (business unit)\ncentralized: prescriptive classic alternatives decentralized: distributed durable interface\n  Centralized prescriptive apprived standards\n pros  reduce complexity reduce decision time reusable assets low cost  cons  may not be a fit hard to gain concensus IT dissatifcation user dissatisfaction strong governance needed   classic Alternatives multiple approved standards\n pros  right tools for the job more control improved satisfaction  cons  increased design time choices may be incorrect higher overall cost   Decentralized distributed Decisions and standards are delegated to business units; minimal set of standards\n pros  right tools for the job business unit control minimal global stds better overal satisfaction  cons  lack of synchronization very high cost hard to control costs hard to govern EA stds   durable interface No EA; all standards are delegated except for standards around integrating business units / communication; SOA\n pros  right tools fo the job business unit control synergy between depts better overall user satisfaction  cons  maintaining interfaces high costs   where do we fit? where do we want to be?  we seem to hold teams to \u0026ldquo;distributed\u0026rdquo; quadrant, and ourselves to \u0026ldquo;classic alternatives\u0026rdquo; quadrant  this leads to large gaps in standards / standards compliance with no desire / priority to correct  problems arise in areas where\u0026hellip;\n we attempting to apply standards and governance a CA level support teams to build in a distributed fashion  distributed methodology requires truely crossfunctional teams\n shared services pattern creates the conflict  which quadrant does kloans qwd pattern fall in? is that a communication concern? is that a component integration?\n shared services supporting \u0026ldquo;n\u0026rdquo; implementations\n expectation of unified deployment, security, ci, integration etc. no commitment to constrain implementations to conform to platform   solutions  high priority standards  app / component scope to define boundaries of concern communication platform (k8s, deployment, composition patterns) integration  communicate our desired quadrant and why (and why not the others)  document established \u0026ldquo;classic alternatives\u0026rdquo; -   maturity model  Project planning\n   Development support\n Design identified and communicated (documented) upstream of kickoff Shared understanding with team of domain, scope, and design Team executes successfully on plan  Architectural Strategies \u0026amp; Standards Management\n Identify Current Strategies used  centralized, decentralized; classic alternatives, distributed, etc. in Austin technology? in technology? across dept? responsibilities to each? applicability to each shared service group (arch, cloudops, security) do we want to include process here?  Define Target Strategy(s)  classify enterprise standards v business unit standards  (current vs. target)  map existing standards to strategy identify gaps in standards  Migrate software and design to follow strategy  New designs fit strategy Non-conformant designs identified Work to migrate to standards identified    goals:  provide strategic vision \u0026amp; direction establish architecture \u0026amp; process governance communicating goals, metrics, and value across the org  portfolio model  tactical localized + enterprise strategic   tactical/localized  quick and low risk resolve a problem, add a feature  tactical/enterprise  generally technical longer and expensive medium risk address cross dept. pain  localized/strategic  strategic, not just technical long and expensive, medium risk scoped to a single dept/area  enterprise/strategic  can last years extremely high risk locks up most resources impacts entire org   Use to analyize portfolio:\n tactical strategic local 80% 5% sustain status quo enterprise 12% 3% 3% 5% startup 2% 90% 3% 20% healthy 2% 5%   Project Planning  process defined and followed to: capture, communicate, document, carry out, and confirm completion of functional and non-functional requirements  Application Tools Support    System Tools Support Application Design    System Design Platform Standards\n technologies\n architecture\n methodology\n process\n  "
+},
+{
+	"uri": "/log/12-03/",
+	"title": "12 03",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/log/11-26/",
+	"title": "11-26",
+	"tags": [],
+	"description": "",
+	"content": " mike re. regulators  unit testing v. component testing? mocking database abstractions? \u0026ldquo;scope\u0026rdquo; of identity \u0026amp; consumer service  is the identity linking robust enough to power an app that is exposing privileged functionality? is this scoped to marketing? use cases beyond cross sell?  field based encryption of pii data in a relational database design patterns (abstractions between http concerns, business logic, data abstraction)  "
+},
+{
+	"uri": "/log/11-25/",
+	"title": "11-25",
+	"tags": [],
+	"description": "",
+	"content": " juan 1:1 re. loan mods  scra(?) lowered rate while service members are deployed applying surpluss to principal (available for take back) isn\u0026rsquo;t legal rich \u0026amp; camilo will be working on this  "
+},
+{
+	"uri": "/log/11-21/",
+	"title": "11-21",
+	"tags": [],
+	"description": "",
+	"content": " juan  finishing up late fees sandeep \u0026amp; yavor loan mods  "
+},
+{
+	"uri": "/log/11-18/",
+	"title": "11-18",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/log/11-15/",
+	"title": "11-15",
+	"tags": [],
+	"description": "",
+	"content": " 2020 load meeting  php7 upgrade auditors sometime next june\n what does a project plan look like?\n focus? edge facing most important -   1:1 with mike  i dumped on definition of platform architecture  pradeep\u0026rsquo;s \u0026ldquo;functional\u0026rdquo; definition vs the \u0026ldquo;non-functional\u0026rdquo; aspects  lead arch job desc  https://docs.google.com/document/d/1BZvEINVKs8GhAZi3PY7hcMTe5jb8SpNLIPLrf-TbBcE/edit?ts=5dcedf25#heading=h.scw4vkpswaou   gitlab alignment meeting  mirroring repositories and testing dark today upstreams not fupported, could be built with APIs  tried to impress importance of this to PM  may be expected by some for june audit hybrid intermediate state while (e.g.kloans/nl) one team has moved and others using their libs haven\u0026rsquo;t  probably favor leaving shared pieces in gitlab   "
+},
+{
+	"uri": "/log/11-14/",
+	"title": "11-14",
+	"tags": [],
+	"description": "",
+	"content": " nl localdev  services aren\u0026rsquo;t in dca right now  enforce this should go into DCA makes live edits possible (also makes things more consistent)  second set of config details in horde.json kca implications\n local containers for mysql, rabbitmq, memcached\n expose mysql over 3306   snowflakes\n lamp-cms kca inmo-lead   bulk data api for kls  need for cpi by mid december, delivered in Jan\n juan is team lead on this\n scale\n today 150 could have thousands  requirements\n expecting a transactional response sometimes exposing to DOT minute/an hours stale is ok, day off may not  filter by fiid, by product\n future:\n status? (active/paid)\u0026hellip; probably not  inbound\n skip DOT, new specific use case \u0026amp; all impl the same interface batch?   "
+},
+{
+	"uri": "/kloans/kls-disbursements/",
+	"title": "Kls Disbursements",
+	"tags": [],
+	"description": "",
+	"content": " 11-07 kls disbursements brd meeting  onus transactions only fi v product level?  product level offers more flexibility, probably necessary  track fees, insurance etc regardless of \u0026ldquo;enabled\u0026rdquo;  implications for roll out? data input requirement?  tracking insurance etc. fees  fees_gl_account_number + fee_description uniquely targets a fee multiple fee types may share a single gl  ach (on us) posting  on failure, manually fix (in core). Don\u0026rsquo;t worry about correcting kls data deposit type field (checking / savings)  reporting?  track all, not just \u0026ldquo;sactionable\u0026rdquo; type (deposit / on us ach)  moving all gl money (w/ ach) is LOS calculating APR and sending in w/ CLF? changing GLs over time? -  "
+},
+{
+	"uri": "/kloans/sandeep-seshadri/",
+	"title": "Sandeep Seshadri",
+	"tags": [],
+	"description": "",
+	"content": " 11-04  language  php services java services ~10 lots of java based lambdas  main components  kloans-loan batch loan importer  secondary components  reporting metro2  main concepts\n snapshots  any time an event happens, a snapshot is created: whats your balance, days delinquent, interest (loan snapshot available)  initialization, payment, fee adjustment vanilla loan would have initialization + monthly payment events delinquent payment would end up being daily  loan-term-snapshot - for this range, this is your installment amount  Batch  recurring payments, delinquency, (design) https://confluence.bancvue.com/display/KL/Kloans+Job+Runner (workflow) https://confluence.bancvue.com/display/KL/Batch+Jobs (tf) http://git.bvops.net/projects/DPK/repos/dpk-kloans-job-runner/browse/src/terraform/main.tf  replay loan-mod takebacks - https://confluence.bancvue.com/display/KL/Take-Backs  single / dual asset   key processes (business view)\n https://confluence.bancvue.com/display/KL/Business+Process+Flows+-+Health+Monitoring   "
+},
+{
+	"uri": "/kloans/cpi/",
+	"title": "CPI",
+	"tags": [],
+	"description": "",
+	"content": " 11-13 - meeting (Ben Yang)  BRD https://docs.google.com/document/d/1V3Xk4jCIUfdM4x6bRqaNEz89_vu6dUQTwzN-CWiLtlk/edit?usp=sharing see faqs to get caught up bulk data api integration\n https://confluence.bancvue.com/display/Architecture/Decision+-+How+to+serve+up+reporting+or+bulk+data+from+the+KLS  kloans dat layer (DOT)\n configuration info provided in KLS to configure external API details\n all batch refresh daily probably (usually) configured to run weekly  day / time of week   pull loan data\n full collection, or ids then loop and query  map kls data to cpi vendors\n have 2 vendors today, may have more later  ship to vendor\n w/ sftp  each FI handled separately  look into FIT for maunal transfers  kloans to pick up late January - March\n get data extract sooner for DOT testing, help formalize data contract  DOT to start figuring out sftp transfers\n  "
+},
+{
+	"uri": "/kloans/andrew-chin/",
+	"title": "Andrew Chin",
+	"tags": [],
+	"description": "",
+	"content": " 11-12  web-gateway replacement discussion  java/spring php/laravel single deploy (fliglio style) or duel (s3/k8s, spring style) java models / clients largely exist for kloans-loan already   process  trs missing acceptance criteria / non-happy path  epic  BRD  requirements in given/when/then acceptance criteria  user stories technical design subtasks for technical tasks estimate / review / execute    11-05  BSI - smaller solution powered by third party solution\n largely file driven / batch based lots of integration work that we would need to do no multitenancy payment handling - fi / buyer / dual asset handling of remainder amounts setup and interacting with external servicer; external \u0026amp; internal systems -  fee reversal example work\n 2 objects, 1 repository - model repo around composition of objects for a use case rather than granular / chatty / normalized data access layer   dpk consolidation for lambdas\n eni exposion when they onboard hawaii FI\n migrate vpc lambda workloads into a container profile with many loan imports minimal first step, same triggers \u0026amp; port into springboot app  klos - los for each FI for onboarding / digital push\n ?  single / dual asset loans\n payment waterfall some areas are set up with interfaces to accept polymorphism loans service will get complicated  south beach / juan    "
+},
+{
+	"uri": "/nl/horde/",
+	"title": "Horde",
+	"tags": [],
+	"description": "",
+	"content": " https://confluence.bancvue.com/display/Architecture/HOWTO+Install+Horde https://confluence.bancvue.com/display/Architecture/Horde+Plugins https://confluence.bancvue.com/display/Architecture/HOWTO+Pull+a+Docker+Image+from+ECR https://confluence.bancvue.com/display/Architecture/Horde+Plugin+Bundles#HordePluginBundles-Installing\u0026amp;UpgradingPlugin-Bundles  "
+},
+{
+	"uri": "/nl/deflash/",
+	"title": "Deflash",
+	"tags": [],
+	"description": "",
+	"content": "  https://confluence.bancvue.com/display/DEV/AWS+Migration+-+De-Flash+FirstBase+UIs https://docs.google.com/spreadsheets/d/1LPJb8d0mPT7cXrvq2p4qHZ3WkwgNmgoa7LYL3gH_Z2U/edit#gid=0 https://confluence.bancvue.com/display/DEV/TR-258+%3A+De-Flash+FirstBase+UIs https://jira.bancvue.com/browse/TR-258  de-flashing priorities  UX Priorities  big picture structure (are products, locations, docs three portalapps?) design elements  header common layout examples  come up with list here left nav tabs modal  elements that are important to be consistent  \u0026ldquo;save\u0026rdquo; standard fields (e.g. product data) come up with list here     "
+},
+{
+	"uri": "/log/11-13/",
+	"title": "11-13",
+	"tags": [],
+	"description": "",
+	"content": " KCMS / NL 2020 priorities  deflash php7 svn publisher mfa self-service  dpk \u0026amp; ccg  for a component, share secrets for multiple lambdas, separate env vars  local map for each artifact/env  could be using json for tf \u0026amp; building fragment models rather than tf tpls http://git.bvops.net/projects/DPK/repos/dpk-lambda-service/browse/src/fragments/_example-service/lambda.tf\n use ccg to generate env files \u0026amp; tf module fragment\n AR get w/ satish to build poc\n  fkClient vs fiid  use fiid  funding-ach core-audit  downstream reservoir subscribers dot team  lemp local dev patterns  tests  local mysql v horde mysql  local-dev  need data, use dev db hermetic, use local db horde.json / remote.json hybrid (component resources etc.) component resources for 2 integrated services -  mysql  horde mysql os x mysql brew mysql mysql.horde bug  rabbit  "
+},
+{
+	"uri": "/log/11-08/",
+	"title": "11-08",
+	"tags": [],
+	"description": "",
+	"content": " dev circle  nuxJs framework  improving typescript support more active lately shawn w converting kid auth ui currently to test/poc karl like it  standardizing procommit \u0026amp; editorconfig  filter commits to fix them vs disallow commits could help clean up commit diffs or make them worse https://github.com/jokeyrhyme/standard-editorconfig/blob/master/.editorconfig need separate meeting to agree on style details  standard lambda dpk  2 patterns  1 lambda, 1 handler, 1 deploy 1 lambda, n handlers, 1 deploy group by technical similarity, business context? need to catologue existing patterns to start constraining   vuetify upgrade (to 2)  protects against library comptibility has design changes, not dramatic changes though (- michael from boca, karl)  satis  neeeeed a next step on this http://satisfy.k8s.dev.ksops.net/   "
+},
+{
+	"uri": "/log/11-07/",
+	"title": "11-07",
+	"tags": [],
+	"description": "",
+	"content": " kls disbursements brd meeting  onus transactions only fi v product level?  product level offers more flexibility, probably necessary  track fees, insurance etc regardless of \u0026ldquo;enabled\u0026rdquo;  implications for roll out? data input requirement?  tracking insurance etc. fees  fees_gl_account_number + fee_description uniquely targets a fee multiple fee types may share a single gl  ach (on us) posting  on failure, manually fix (in core). Don\u0026rsquo;t worry about correcting kls data deposit type field (checking / savings)  reporting?  track all, not just \u0026ldquo;sactionable\u0026rdquo; type (deposit / on us ach)  moving all gl money (w/ ach) is LOS calculating APR and sending in w/ CLF? changing GLs over time? -\n figure out this doc\u0026hellip;\n https://confluence.bancvue.com/display/Architecture/Decision+-+How+to+serve+up+reporting+or+bulk+data+from+the+KLS   ux \u0026amp; dev sync up  header is not at top of ux queue\n thinking after locations, products, documents kapp, loans, then kcms  trying to add consistency across the ecosystem\n e.g. labeling consistency e.g. logout position 1   "
+},
+{
+	"uri": "/log/11-06/",
+	"title": "11-06",
+	"tags": [],
+	"description": "",
+	"content": " cookie popup  patrick\n can\u0026rsquo;t force on an FI produce \u0026ldquo;factory\u0026rdquo; way to roll it out FI\u0026rsquo;s responsibility if they opt out  Fi is collecting the info, not kasasa  17+ states are implementing something similar  need by Jan 1, but probably good enough to show progress towards this\n can mess with granular opt out, but patrick recommends skipping to global opt out\n still \u0026ldquo;essential cookies\u0026rdquo; (for inmo app etc.) vs. stuff like IBM DA, google analytics  could have FI specific analytics scripts   Since this is more visible, needs to be a priority\n still largely trying to understand the scope of broader ccpa question  where do we roll it out?\n fis based in certain states? all states / traffic?  inmo only FIs\n is hostname important? is this still a part of \u0026ldquo;their\u0026rdquo; website  handoffs to online banking, speedbump \u0026ldquo;their policies apply\u0026rdquo;\n map complete plan, get first team to make final call\n state inclusion / exclusion is for consumer viewers, not FI hosting site\n not practical to enable banner for certain stat viewerships (ips not reliable)\n  gitlab sync with Mason  update ccg to use gitlab tf modules  https://confluence.bancvue.com/display/CTH/Gitlab+Migration+-+Deploy+Packs  gitlab Make runner needs sh (doesn\u0026rsquo;t respect #!/bin/bash)\n some things to be aware of: https://confluence.bancvue.com/display/CTH/WIP%3A+Gitlab+-+Things+To+Be+Aware+Of pre commit hooks https://pre-commit.com/hooks.html\n include in backlog grooming for tools when that happens\n try to get involved in gitlab rollout\n  api envelope for ui specific routes? https://confluence.bancvue.com/pages/viewpage.action?pageId=67611301\n API gateway pattern  https://blogs.perficient.com/2016/08/22/the-role-of-api-gateways-in-microservices/  options  adapt response in js for specific use adapt response in gateway; bff/ single purpose endpoint build private svc to UI spec  requirements  long term complexity short term complexity dev effort \u0026ldquo;good\u0026rdquo; use of additional boilerplate follow standards, cognitive load to revisit UI impl cleanliness backend impl cleanliness   "
+},
+{
+	"uri": "/log/11-05/",
+	"title": "11-05",
+	"tags": ["sync"],
+	"description": "",
+	"content": " envelope decision meeting w/ kloans  kickoff explanation:  my understanding is that option 2 is the current standard, but I can see how the standard could interpretted to imply option 1  needs clarification  decision doc should either clarify standard or define reasons for why bypassing the decision is acceptable  meeting notes:  Ben - went over options \u0026amp; requirements used to frame the decision doc. Ben - What is the primary concern with option 2 / following the existing standard? Karl - brought up the concern that adding specific handling code to solve this in the the gateway increased the footprint that could go wrong, potentially making things more brittle general discussion on the brittleness that the Gateway pattern \u0026amp; envelope consistency are designed to prevent, and how that compared to Karl\u0026rsquo;s concern. Rob - this call is only in place for this specific UI use case general discussion on whether it\u0026rsquo;s the only use case or just the first use case, and whether that should warrant special treatment anyway. Rob - there may be future requirements around throttling this call. Should that throttling be shared across all UIs or specific to a single UI? Ben - throttling is part of access control and is firmly part of the Gateway\u0026rsquo;s responsibility Ben - I don\u0026rsquo;t have enough context to weigh in on how hard / important reworking the current examples to use an envelope in the private service is, but I do feel strongly that we haven\u0026rsquo;t established a good reason to forgo following the standard in this example and think it\u0026rsquo;s important that whatever we decide it isn\u0026rsquo;t treated as precedent to repeat the same decision Sean - Sounds like there\u0026rsquo;s a majority in favor of following the standard, so let\u0026rsquo;s do that. Ben - I\u0026rsquo;ll finalize decision doc \u0026amp; update the rest standard with clarifications   Arch status  general frustration with ux agree on need to address fiid / clientid -\u0026gt; setup meeting angela having trouble getting in meetings up front\u0026hellip; causes resetting expectations satish feeling responsible for keeping projects moving\u0026hellip; how should this actually work?  sync with Andrew Chin  BSI - smaller solution powered by third party solution\n largely file driven / batch based lots of integration work that we would need to do no multitenancy payment handling - fi / buyer / dual asset handling of remainder amounts setup and interacting with external servicer; external \u0026amp; internal systems -  fee reversal example work\n 2 objects, 1 repository - model repo around composition of objects for a use case rather than granular / chatty / normalized data access layer   dpk consolidation for lambdas\n eni exposion when they onboard hawaii FI\n migrate vpc lambda workloads into a container profile with many loan imports minimal first step, same triggers \u0026amp; port into springboot app  klos - los for each FI for onboarding / digital push\n ?  single / dual asset loans\n payment waterfall some areas are set up with interfaces to accept polymorphism loans service will get complicated  south beach / juan    product sync  pinning FI selection from portalapp to portalapp\n url based  product editing\n page content not editable   core-audit updates Start supporting clientId so that as we roll out a bunch of portalapps w/ auditing, we don\u0026rsquo;t paint ourselves into a hole\n design  add client resource  POST /core-audit/client/:fkClient/audit  lookup fiId \u0026amp; insert both values in db  use core-fi client to get fiId cache fiId lookup (APC/memcache impl in core-fi client)   GET /core-audit/client/:fkCLient/audit/:id  new DM impl, filter on fkClient    MVP  add POST endpoint to new client resource translate fkClient to fiId, use existing DM call to insert - use core-fi client to get fiId - cache fiId lookup (APC/memcache impl in core-fi client)   kcms-sync  products  bulk add in the product tool   "
+},
+{
+	"uri": "/tags/sync/",
+	"title": "sync",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/nl/core-audit/",
+	"title": "Core Audit",
+	"tags": [],
+	"description": "",
+	"content": " add /core-audit/:fkClient/audit\u0026hellip; versions of all endpoints lookup fiId on insert \u0026amp; include in db  consider memcache cache for this data  allow collection filters by fiid \u0026amp; fkClient to not be 1:1 migrate all existing data to include fkClient  consider importing client table from segundo to make this easier   http://swagger.dev.ksops.net/#/core-audit\nGET /core-audit/audit POST /core-audit/audit GET /core-audit/:fiId/audit/:id Audit{ id integer fiId integer time datetime userId integer serviceName string level string/Enum: presentation, info, mixed, all correlationId string targetId integer targetKey string tags [array of strings] types string/Enum: msg, diff message string contentBefore string contentAfter string ip string }  "
+},
+{
+	"uri": "/kloans/",
+	"title": "Kloans",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/nl/",
+	"title": "Nl",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/nl/dynamic-structure-pages/",
+	"title": "Dynamic Structure Pages",
+	"tags": [],
+	"description": "",
+	"content": " blurb tool  Add new blurb from available types (plain text, html, w/ w/out filler, ) versioning / auditing  ContentTemplate tool  \u0026ldquo;Blurb\u0026rdquo; type (esp. \u0026ldquo;default\u0026rdquo; template) \u0026ldquo;blurb for blurb page\u0026rdquo; bone  Sitemap  Library Panel  Bulk add list of blurbs to drag into sitemap  page properties / content tab (with page image etc, not with layout)  select a blurb from dropdown     Structure:  Dynamic Structure Page Structure Type  to list applicable content for page categories in ContentTemplate types?  could select ContentTemplate in SiteMap library when dragging \u0026ldquo;wizard\u0026rdquo; / speed-bump to add a structure page     "
+},
+{
+	"uri": "/log/11-04/",
+	"title": "11-04",
+	"tags": ["sync"],
+	"description": "",
+	"content": "  talked w/ rob about combining lamp teams sooner rather than later.  he agreed in general \u0026amp; had other thoughts about re-settling mike \u0026amp; mike sooner rather than later as well   tf sync w/ mason  tf testing options  Terratest, aws resources in go Tf compliance, behavior style Tf init, validate, plan, apple, destroy in a hermetic aws space  need to meet w/ Mason \u0026amp; Satish to integrate lambda w/ ccg  Regulators / Marketing tech stack  stack\n Vue web-gateway (python) currently not repeatable private svc (pytnon)  mostly MAP processes - moving data around,\n language options:\n python \u0026amp; php - expensive integrations within the team, likely have repeated business logic and poor communication python - lamp devs have to switch, lose web based tooling php - python devs have to switch, lose file movement/etl tooling   "
+},
+{
+	"uri": "/cheatsheets/vim/",
+	"title": "Vim",
+	"tags": [],
+	"description": "",
+	"content": "oh hi\n"
+},
+{
+	"uri": "/cheatsheets/hugo/",
+	"title": "Hugo",
+	"tags": [],
+	"description": "",
+	"content": " \u0026ldquo;learn\u0026rdquo; theme docs\n hugo server -D hugo new cheatsheets/hugo.md   "
+},
+{
+	"uri": "/scratch/posts/my-first-post/",
+	"title": "My First Post",
+	"tags": [],
+	"description": "",
+	"content": " section hello\nsub section hello\nsub section2 hello\nsection 2 hello\nsubsection 2.1 hello\nsub section 2.2 hello\n"
+},
+{
+	"uri": "/log/11-01/",
+	"title": "11-01",
+	"tags": [],
+	"description": "",
+	"content": "angela / klogin notes (see juans linked from it) https://confluence.bancvue.com/display/DEV/KLoans+to+KLogin+Migration+Notes\n"
+},
+{
+	"uri": "/log/10-30/",
+	"title": "10-30",
+	"tags": [],
+	"description": "",
+	"content": " KLoans:  team leads - sandeep, pedro, juan  Backlog:  plan how to measure and track architect capacity: new project is 50%, rtb is 10, new feature is 25 schedule one of daily meetings as arch team meetings: make an agenda, focus on strategic work figure out how to coordinate on shared projects with cloudops publicizing ccg / dpk\n standup stuff:\n status / show and tell / followup topics wed: team meetings every other thurs: backlog grooming w/ mike  standup followups:\n ground rules to make core standup more concise? kcms assume-role mason\u0026rsquo;s lambda patterns  nii, nl, and staffing\n what are our options now?  merge nl / zloco now? have nii team do python or php, not both?  how do we prevent this moving forward?  what role does / should architecture have  in selecting teams for a project/product in organizing teams \u0026amp; skill sets     "
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

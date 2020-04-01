@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on notes</title>
+    <link>/scratch/posts/</link>
+    <description>Recent content in Posts on notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 03 Nov 2019 21:45:14 -0600</lastBuildDate>
+    
+	<atom:link href="/scratch/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>/scratch/posts/my-first-post/</link>
+      <pubDate>Fri, 01 Nov 2019 14:01:45 -0500</pubDate>
+      
+      <guid>/scratch/posts/my-first-post/</guid>
+      <description>section hello
+sub section hello
+sub section2 hello
+section 2 hello
+subsection 2.1 hello
+sub section 2.2 hello</description>
+    </item>
+    
+  </channel>
+</rss>

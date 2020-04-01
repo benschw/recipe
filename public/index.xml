@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes</title>
+    <link>/</link>
+    <description>Recent content on notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 04 Dec 2019 08:59:31 -0600</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agile Architecture</title>
+      <link>/scratch/agile-arch/</link>
+      <pubDate>Fri, 15 Nov 2019 21:45:14 -0600</pubDate>
+      
+      <guid>/scratch/agile-arch/</guid>
+      <description>Individuals and interactions over processes and tools Shared understanding of the design It is important for a dev team to have a shared understanding of the vision and goals of an application and its design.
+ A common understanding of an application&amp;rsquo;s design:  Helps to ensure that collaboration can occur with minimal friction Helps prevent false starts and wasted effort on divergent solutions Results in a leaner application that behaves more efficiently   Method  Maintain a high level design of the application that can be referenced.</description>
+    </item>
+    
+    <item>
+      <title>12 04</title>
+      <link>/log/12-04/</link>
+      <pubDate>Wed, 04 Dec 2019 08:59:31 -0600</pubDate>
+      
+      <guid>/log/12-04/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ea Strategies</title>
+      <link>/scratch/ea-strategies/</link>
+      <pubDate>Tue, 03 Dec 2019 13:32:49 -0600</pubDate>
+      
+      <guid>/scratch/ea-strategies/</guid>
+      <description>(from Mark Richards&amp;rsquo;s &amp;ldquo;EA fundamentals&amp;rdquo; class)
+EA Strategies &amp;amp; Standards  Enterprise Architects (standards) Solutions Architects (business unit)
+centralized: prescriptive classic alternatives decentralized: distributed durable interface
+  Centralized prescriptive apprived standards
+ pros  reduce complexity reduce decision time reusable assets low cost  cons  may not be a fit hard to gain concensus IT dissatifcation user dissatisfaction strong governance needed   classic Alternatives multiple approved standards</description>
+    </item>
+    
+    <item>
+      <title>12 03</title>
+      <link>/log/12-03/</link>
+      <pubDate>Mon, 02 Dec 2019 09:57:53 -0600</pubDate>
+      
+      <guid>/log/12-03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>11-26</title>
+      <link>/log/11-26/</link>
+      <pubDate>Tue, 26 Nov 2019 09:38:34 -0600</pubDate>
+      
+      <guid>/log/11-26/</guid>
+      <description> mike re. regulators  unit testing v. component testing? mocking database abstractions? &amp;ldquo;scope&amp;rdquo; of identity &amp;amp; consumer service  is the identity linking robust enough to power an app that is exposing privileged functionality? is this scoped to marketing? use cases beyond cross sell?  field based encryption of pii data in a relational database design patterns (abstractions between http concerns, business logic, data abstraction)  </description>
+    </item>
+    
+    <item>
+      <title>11-25</title>
+      <link>/log/11-25/</link>
+      <pubDate>Mon, 25 Nov 2019 09:53:31 -0600</pubDate>
+      
+      <guid>/log/11-25/</guid>
+      <description> juan 1:1 re. loan mods  scra(?) lowered rate while service members are deployed applying surpluss to principal (available for take back) isn&amp;rsquo;t legal rich &amp;amp; camilo will be working on this  </description>
+    </item>
+    
+    <item>
+      <title>11-21</title>
+      <link>/log/11-21/</link>
+      <pubDate>Thu, 21 Nov 2019 09:13:10 -0600</pubDate>
+      
+      <guid>/log/11-21/</guid>
+      <description> juan  finishing up late fees sandeep &amp;amp; yavor loan mods  </description>
+    </item>
+    
+    <item>
+      <title>11-18</title>
+      <link>/log/11-18/</link>
+      <pubDate>Mon, 18 Nov 2019 09:29:08 -0600</pubDate>
+      
+      <guid>/log/11-18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>11-15</title>
+      <link>/log/11-15/</link>
+      <pubDate>Fri, 15 Nov 2019 09:09:49 -0600</pubDate>
+      
+      <guid>/log/11-15/</guid>
+      <description>2020 load meeting  php7 upgrade auditors sometime next june
+ what does a project plan look like?
+ focus? edge facing most important -   1:1 with mike  i dumped on definition of platform architecture  pradeep&amp;rsquo;s &amp;ldquo;functional&amp;rdquo; definition vs the &amp;ldquo;non-functional&amp;rdquo; aspects  lead arch job desc  https://docs.google.com/document/d/1BZvEINVKs8GhAZi3PY7hcMTe5jb8SpNLIPLrf-TbBcE/edit?ts=5dcedf25#heading=h.scw4vkpswaou   gitlab alignment meeting  mirroring repositories and testing dark today upstreams not fupported, could be built with APIs  tried to impress importance of this to PM  may be expected by some for june audit hybrid intermediate state while (e.</description>
+    </item>
+    
+    <item>
+      <title>11-14</title>
+      <link>/log/11-14/</link>
+      <pubDate>Thu, 14 Nov 2019 09:58:38 -0600</pubDate>
+      
+      <guid>/log/11-14/</guid>
+      <description>nl localdev  services aren&amp;rsquo;t in dca right now  enforce this should go into DCA makes live edits possible (also makes things more consistent)  second set of config details in horde.json kca implications
+ local containers for mysql, rabbitmq, memcached
+ expose mysql over 3306   snowflakes
+ lamp-cms kca inmo-lead   bulk data api for kls  need for cpi by mid december, delivered in Jan</description>
+    </item>
+    
+    <item>
+      <title>Kls Disbursements</title>
+      <link>/kloans/kls-disbursements/</link>
+      <pubDate>Tue, 12 Nov 2019 16:17:37 -0600</pubDate>
+      
+      <guid>/kloans/kls-disbursements/</guid>
+      <description>11-07 kls disbursements brd meeting  onus transactions only fi v product level?  product level offers more flexibility, probably necessary  track fees, insurance etc regardless of &amp;ldquo;enabled&amp;rdquo;  implications for roll out? data input requirement?  tracking insurance etc. fees  fees_gl_account_number + fee_description uniquely targets a fee multiple fee types may share a single gl  ach (on us) posting  on failure, manually fix (in core).</description>
+    </item>
+    
+    <item>
+      <title>Sandeep Seshadri</title>
+      <link>/kloans/sandeep-seshadri/</link>
+      <pubDate>Tue, 12 Nov 2019 16:15:44 -0600</pubDate>
+      
+      <guid>/kloans/sandeep-seshadri/</guid>
+      <description>11-04  language  php services java services ~10 lots of java based lambdas  main components  kloans-loan batch loan importer  secondary components  reporting metro2  main concepts
+ snapshots  any time an event happens, a snapshot is created: whats your balance, days delinquent, interest (loan snapshot available)  initialization, payment, fee adjustment vanilla loan would have initialization + monthly payment events delinquent payment would end up being daily  loan-term-snapshot - for this range, this is your installment amount  Batch  recurring payments, delinquency, (design) https://confluence.</description>
+    </item>
+    
+    <item>
+      <title>CPI</title>
+      <link>/kloans/cpi/</link>
+      <pubDate>Tue, 12 Nov 2019 16:15:08 -0600</pubDate>
+      
+      <guid>/kloans/cpi/</guid>
+      <description>11-13 - meeting (Ben Yang)  BRD https://docs.google.com/document/d/1V3Xk4jCIUfdM4x6bRqaNEz89_vu6dUQTwzN-CWiLtlk/edit?usp=sharing see faqs to get caught up bulk data api integration
+ https://confluence.bancvue.com/display/Architecture/Decision+-+How+to+serve+up+reporting+or+bulk+data+from+the+KLS  kloans dat layer (DOT)
+ configuration info provided in KLS to configure external API details
+ all batch refresh daily probably (usually) configured to run weekly  day / time of week   pull loan data
+ full collection, or ids then loop and query  map kls data to cpi vendors</description>
+    </item>
+    
+    <item>
+      <title>Andrew Chin</title>
+      <link>/kloans/andrew-chin/</link>
+      <pubDate>Tue, 12 Nov 2019 16:14:51 -0600</pubDate>
+      
+      <guid>/kloans/andrew-chin/</guid>
+      <description>11-12  web-gateway replacement discussion  java/spring php/laravel single deploy (fliglio style) or duel (s3/k8s, spring style) java models / clients largely exist for kloans-loan already   process  trs missing acceptance criteria / non-happy path  epic  BRD  requirements in given/when/then acceptance criteria  user stories technical design subtasks for technical tasks estimate / review / execute    11-05  BSI - smaller solution powered by third party solution</description>
+    </item>
+    
+    <item>
+      <title>Horde</title>
+      <link>/nl/horde/</link>
+      <pubDate>Tue, 12 Nov 2019 10:17:20 -0600</pubDate>
+      
+      <guid>/nl/horde/</guid>
+      <description> https://confluence.bancvue.com/display/Architecture/HOWTO+Install+Horde https://confluence.bancvue.com/display/Architecture/Horde+Plugins https://confluence.bancvue.com/display/Architecture/HOWTO+Pull+a+Docker+Image+from+ECR https://confluence.bancvue.com/display/Architecture/Horde+Plugin+Bundles#HordePluginBundles-Installing&amp;amp;UpgradingPlugin-Bundles  </description>
+    </item>
+    
+    <item>
+      <title>Deflash</title>
+      <link>/nl/deflash/</link>
+      <pubDate>Tue, 12 Nov 2019 10:15:55 -0600</pubDate>
+      
+      <guid>/nl/deflash/</guid>
+      <description>  https://confluence.bancvue.com/display/DEV/AWS+Migration+-+De-Flash+FirstBase+UIs https://docs.google.com/spreadsheets/d/1LPJb8d0mPT7cXrvq2p4qHZ3WkwgNmgoa7LYL3gH_Z2U/edit#gid=0 https://confluence.bancvue.com/display/DEV/TR-258+%3A+De-Flash+FirstBase+UIs https://jira.bancvue.com/browse/TR-258  de-flashing priorities  UX Priorities  big picture structure (are products, locations, docs three portalapps?) design elements  header common layout examples  come up with list here left nav tabs modal  elements that are important to be consistent  &amp;ldquo;save&amp;rdquo; standard fields (e.g. product data) come up with list here     </description>
+    </item>
+    
+    <item>
+      <title>11-13</title>
+      <link>/log/11-13/</link>
+      <pubDate>Tue, 12 Nov 2019 09:23:18 -0600</pubDate>
+      
+      <guid>/log/11-13/</guid>
+      <description>KCMS / NL 2020 priorities  deflash php7 svn publisher mfa self-service  dpk &amp;amp; ccg  for a component, share secrets for multiple lambdas, separate env vars  local map for each artifact/env  could be using json for tf &amp;amp; building fragment models rather than tf tpls http://git.bvops.net/projects/DPK/repos/dpk-lambda-service/browse/src/fragments/_example-service/lambda.tf
+ use ccg to generate env files &amp;amp; tf module fragment
+ AR get w/ satish to build poc</description>
+    </item>
+    
+    <item>
+      <title>11-08</title>
+      <link>/log/11-08/</link>
+      <pubDate>Fri, 08 Nov 2019 09:53:05 -0600</pubDate>
+      
+      <guid>/log/11-08/</guid>
+      <description>dev circle  nuxJs framework  improving typescript support more active lately shawn w converting kid auth ui currently to test/poc karl like it  standardizing procommit &amp;amp; editorconfig  filter commits to fix them vs disallow commits could help clean up commit diffs or make them worse https://github.com/jokeyrhyme/standard-editorconfig/blob/master/.editorconfig need separate meeting to agree on style details  standard lambda dpk  2 patterns  1 lambda, 1 handler, 1 deploy 1 lambda, n handlers, 1 deploy group by technical similarity, business context?</description>
+    </item>
+    
+    <item>
+      <title>11-07</title>
+      <link>/log/11-07/</link>
+      <pubDate>Thu, 07 Nov 2019 09:27:48 -0600</pubDate>
+      
+      <guid>/log/11-07/</guid>
+      <description>kls disbursements brd meeting  onus transactions only fi v product level?  product level offers more flexibility, probably necessary  track fees, insurance etc regardless of &amp;ldquo;enabled&amp;rdquo;  implications for roll out? data input requirement?  tracking insurance etc. fees  fees_gl_account_number + fee_description uniquely targets a fee multiple fee types may share a single gl  ach (on us) posting  on failure, manually fix (in core). Don&amp;rsquo;t worry about correcting kls data deposit type field (checking / savings)  reporting?</description>
+    </item>
+    
+    <item>
+      <title>11-06</title>
+      <link>/log/11-06/</link>
+      <pubDate>Wed, 06 Nov 2019 09:39:31 -0600</pubDate>
+      
+      <guid>/log/11-06/</guid>
+      <description>cookie popup  patrick
+ can&amp;rsquo;t force on an FI produce &amp;ldquo;factory&amp;rdquo; way to roll it out FI&amp;rsquo;s responsibility if they opt out  Fi is collecting the info, not kasasa  17+ states are implementing something similar  need by Jan 1, but probably good enough to show progress towards this
+ can mess with granular opt out, but patrick recommends skipping to global opt out
+ still &amp;ldquo;essential cookies&amp;rdquo; (for inmo app etc.</description>
+    </item>
+    
+    <item>
+      <title>11-05</title>
+      <link>/log/11-05/</link>
+      <pubDate>Tue, 05 Nov 2019 01:57:16 -0600</pubDate>
+      
+      <guid>/log/11-05/</guid>
+      <description>envelope decision meeting w/ kloans  kickoff explanation:  my understanding is that option 2 is the current standard, but I can see how the standard could interpretted to imply option 1  needs clarification  decision doc should either clarify standard or define reasons for why bypassing the decision is acceptable  meeting notes:  Ben - went over options &amp;amp; requirements used to frame the decision doc. Ben - What is the primary concern with option 2 / following the existing standard?</description>
+    </item>
+    
+    <item>
+      <title>Core Audit</title>
+      <link>/nl/core-audit/</link>
+      <pubDate>Mon, 04 Nov 2019 15:59:12 -0600</pubDate>
+      
+      <guid>/nl/core-audit/</guid>
+      <description> add /core-audit/:fkClient/audit&amp;hellip; versions of all endpoints lookup fiId on insert &amp;amp; include in db  consider memcache cache for this data  allow collection filters by fiid &amp;amp; fkClient to not be 1:1 migrate all existing data to include fkClient  consider importing client table from segundo to make this easier   http://swagger.dev.ksops.net/#/core-audit
+GET /core-audit/audit POST /core-audit/audit GET /core-audit/:fiId/audit/:id Audit{ id integer fiId integer time datetime userId integer serviceName string level string/Enum: presentation, info, mixed, all correlationId string targetId integer targetKey string tags [array of strings] types string/Enum: msg, diff message string contentBefore string contentAfter string ip string }  </description>
+    </item>
+    
+    <item>
+      <title>Dynamic Structure Pages</title>
+      <link>/nl/dynamic-structure-pages/</link>
+      <pubDate>Mon, 04 Nov 2019 09:19:52 -0600</pubDate>
+      
+      <guid>/nl/dynamic-structure-pages/</guid>
+      <description>blurb tool  Add new blurb from available types (plain text, html, w/ w/out filler, ) versioning / auditing  ContentTemplate tool  &amp;ldquo;Blurb&amp;rdquo; type (esp. &amp;ldquo;default&amp;rdquo; template) &amp;ldquo;blurb for blurb page&amp;rdquo; bone  Sitemap  Library Panel  Bulk add list of blurbs to drag into sitemap  page properties / content tab (with page image etc, not with layout)  select a blurb from dropdown     Structure:  Dynamic Structure Page Structure Type  to list applicable content for page categories in ContentTemplate types?</description>
+    </item>
+    
+    <item>
+      <title>11-04</title>
+      <link>/log/11-04/</link>
+      <pubDate>Mon, 04 Nov 2019 05:13:24 -0600</pubDate>
+      
+      <guid>/log/11-04/</guid>
+      <description>talked w/ rob about combining lamp teams sooner rather than later.  he agreed in general &amp;amp; had other thoughts about re-settling mike &amp;amp; mike sooner rather than later as well   tf sync w/ mason  tf testing options  Terratest, aws resources in go Tf compliance, behavior style Tf init, validate, plan, apple, destroy in a hermetic aws space  need to meet w/ Mason &amp;amp; Satish to integrate lambda w/ ccg  Regulators / Marketing tech stack  stack</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>/cheatsheets/vim/</link>
+      <pubDate>Sat, 02 Nov 2019 15:25:43 -0500</pubDate>
+      
+      <guid>/cheatsheets/vim/</guid>
+      <description>oh hi</description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>/cheatsheets/hugo/</link>
+      <pubDate>Fri, 01 Nov 2019 16:21:22 -0500</pubDate>
+      
+      <guid>/cheatsheets/hugo/</guid>
+      <description> &amp;ldquo;learn&amp;rdquo; theme docs
+ hugo server -D hugo new cheatsheets/hugo.md   </description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>/scratch/posts/my-first-post/</link>
+      <pubDate>Fri, 01 Nov 2019 14:01:45 -0500</pubDate>
+      
+      <guid>/scratch/posts/my-first-post/</guid>
+      <description>section hello
+sub section hello
+sub section2 hello
+section 2 hello
+subsection 2.1 hello
+sub section 2.2 hello</description>
+    </item>
+    
+    <item>
+      <title>11-01</title>
+      <link>/log/11-01/</link>
+      <pubDate>Fri, 01 Nov 2019 09:13:27 -0600</pubDate>
+      
+      <guid>/log/11-01/</guid>
+      <description>angela / klogin notes (see juans linked from it) https://confluence.bancvue.com/display/DEV/KLoans+to+KLogin+Migration+Notes</description>
+    </item>
+    
+    <item>
+      <title>10-30</title>
+      <link>/log/10-30/</link>
+      <pubDate>Wed, 30 Oct 2019 22:25:30 -0600</pubDate>
+      
+      <guid>/log/10-30/</guid>
+      <description>KLoans:  team leads - sandeep, pedro, juan  Backlog:  plan how to measure and track architect capacity: new project is 50%, rtb is 10, new feature is 25 schedule one of daily meetings as arch team meetings: make an agenda, focus on strategic work figure out how to coordinate on shared projects with cloudops publicizing ccg / dpk
+ standup stuff:
+ status / show and tell / followup topics wed: team meetings every other thurs: backlog grooming w/ mike  standup followups:</description>
+    </item>
+    
+  </channel>
+</rss>

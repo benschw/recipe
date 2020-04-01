@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Language | default "en" }}" class="js csstransforms3d">
+
+  {{ partial "head.html" . }}
+
+  <body class="" data-url="/">
+
+    <section id="body" style="margin-left:0px;">
+      <div id="overlay"></div>
+      <div id="chapter">
+        <div id="body-inner">
+          <h1>{{T "title-404"}}</h1>
+          <p>
+          </p>
+          <p>{{T "message-404"}}</p>
+          <p></p>
+          <p><a href='{{ "" | relLangURL }}'>{{T "Go-to-homepage"}}</a></p>
+          <p><img src='{{ "/images/gopher-404.jpg" | relURL }}' style="width:50%" alt="Page not found!"></p>
+        </div>
+      </div>
+
+    </section>
+  </body>
+
+</html>

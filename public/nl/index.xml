@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nl on notes</title>
+    <link>/nl/</link>
+    <description>Recent content in Nl on notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 Nov 2019 09:23:32 -0600</lastBuildDate>
+    
+	<atom:link href="/nl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Horde</title>
+      <link>/nl/horde/</link>
+      <pubDate>Tue, 12 Nov 2019 10:17:20 -0600</pubDate>
+      
+      <guid>/nl/horde/</guid>
+      <description> https://confluence.bancvue.com/display/Architecture/HOWTO+Install+Horde https://confluence.bancvue.com/display/Architecture/Horde+Plugins https://confluence.bancvue.com/display/Architecture/HOWTO+Pull+a+Docker+Image+from+ECR https://confluence.bancvue.com/display/Architecture/Horde+Plugin+Bundles#HordePluginBundles-Installing&amp;amp;UpgradingPlugin-Bundles  </description>
+    </item>
+    
+    <item>
+      <title>Deflash</title>
+      <link>/nl/deflash/</link>
+      <pubDate>Tue, 12 Nov 2019 10:15:55 -0600</pubDate>
+      
+      <guid>/nl/deflash/</guid>
+      <description>  https://confluence.bancvue.com/display/DEV/AWS+Migration+-+De-Flash+FirstBase+UIs https://docs.google.com/spreadsheets/d/1LPJb8d0mPT7cXrvq2p4qHZ3WkwgNmgoa7LYL3gH_Z2U/edit#gid=0 https://confluence.bancvue.com/display/DEV/TR-258+%3A+De-Flash+FirstBase+UIs https://jira.bancvue.com/browse/TR-258  de-flashing priorities  UX Priorities  big picture structure (are products, locations, docs three portalapps?) design elements  header common layout examples  come up with list here left nav tabs modal  elements that are important to be consistent  &amp;ldquo;save&amp;rdquo; standard fields (e.g. product data) come up with list here     </description>
+    </item>
+    
+    <item>
+      <title>Core Audit</title>
+      <link>/nl/core-audit/</link>
+      <pubDate>Mon, 04 Nov 2019 15:59:12 -0600</pubDate>
+      
+      <guid>/nl/core-audit/</guid>
+      <description> add /core-audit/:fkClient/audit&amp;hellip; versions of all endpoints lookup fiId on insert &amp;amp; include in db  consider memcache cache for this data  allow collection filters by fiid &amp;amp; fkClient to not be 1:1 migrate all existing data to include fkClient  consider importing client table from segundo to make this easier   http://swagger.dev.ksops.net/#/core-audit
+GET /core-audit/audit POST /core-audit/audit GET /core-audit/:fiId/audit/:id Audit{ id integer fiId integer time datetime userId integer serviceName string level string/Enum: presentation, info, mixed, all correlationId string targetId integer targetKey string tags [array of strings] types string/Enum: msg, diff message string contentBefore string contentAfter string ip string }  </description>
+    </item>
+    
+    <item>
+      <title>Dynamic Structure Pages</title>
+      <link>/nl/dynamic-structure-pages/</link>
+      <pubDate>Mon, 04 Nov 2019 09:19:52 -0600</pubDate>
+      
+      <guid>/nl/dynamic-structure-pages/</guid>
+      <description>blurb tool  Add new blurb from available types (plain text, html, w/ w/out filler, ) versioning / auditing  ContentTemplate tool  &amp;ldquo;Blurb&amp;rdquo; type (esp. &amp;ldquo;default&amp;rdquo; template) &amp;ldquo;blurb for blurb page&amp;rdquo; bone  Sitemap  Library Panel  Bulk add list of blurbs to drag into sitemap  page properties / content tab (with page image etc, not with layout)  select a blurb from dropdown     Structure:  Dynamic Structure Page Structure Type  to list applicable content for page categories in ContentTemplate types?</description>
+    </item>
+    
+  </channel>
+</rss>

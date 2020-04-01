@@ -1,0 +1,9 @@
+
+{{$toc := (.Params.toc)}}
+{{if $toc }}
+<div class="toc">
+    <div class="wrapper">
+        {{- .TableOfContents -}}
+    </div>
+</div>
+{{end}}

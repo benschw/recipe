@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sync on notes</title>
+    <link>/tags/sync/</link>
+    <description>Recent content in sync on notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 05 Nov 2019 01:57:16 -0600</lastBuildDate>
+    
+	<atom:link href="/tags/sync/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>11-05</title>
+      <link>/log/11-05/</link>
+      <pubDate>Tue, 05 Nov 2019 01:57:16 -0600</pubDate>
+      
+      <guid>/log/11-05/</guid>
+      <description>envelope decision meeting w/ kloans  kickoff explanation:  my understanding is that option 2 is the current standard, but I can see how the standard could interpretted to imply option 1  needs clarification  decision doc should either clarify standard or define reasons for why bypassing the decision is acceptable  meeting notes:  Ben - went over options &amp;amp; requirements used to frame the decision doc. Ben - What is the primary concern with option 2 / following the existing standard?</description>
+    </item>
+    
+    <item>
+      <title>11-04</title>
+      <link>/log/11-04/</link>
+      <pubDate>Mon, 04 Nov 2019 05:13:24 -0600</pubDate>
+      
+      <guid>/log/11-04/</guid>
+      <description>talked w/ rob about combining lamp teams sooner rather than later.  he agreed in general &amp;amp; had other thoughts about re-settling mike &amp;amp; mike sooner rather than later as well   tf sync w/ mason  tf testing options  Terratest, aws resources in go Tf compliance, behavior style Tf init, validate, plan, apple, destroy in a hermetic aws space  need to meet w/ Mason &amp;amp; Satish to integrate lambda w/ ccg  Regulators / Marketing tech stack  stack</description>
+    </item>
+    
+  </channel>
+</rss>

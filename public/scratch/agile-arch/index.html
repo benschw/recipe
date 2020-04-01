@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="description" content="Notes">
+    <meta name="author" content="Ben Schwartz">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <title>Agile Architecture :: notes</title>
+
+    
+    <link href="/css/nucleus.css?1575477217" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1575477217" rel="stylesheet">
+    <link href="/css/hybrid.css?1575477217" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1575477217" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1575477217" rel="stylesheet">
+    <link href="/css/auto-complete.css?1575477217" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1575477217" rel="stylesheet">
+    <link href="/css/theme.css?1575477217" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1575477217" rel="stylesheet">
+    <link href="/css/theme-blue.css?1575477217" rel="stylesheet">
+    <link href="/css/extra.css?1575477217" rel="stylesheet">
+
+    <script src="/js/jquery-3.3.1.min.js?1575477217"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+    </style>
+</head>
+
+  <body class="" data-url="/scratch/agile-arch/">
+    
+
+<nav id="sidebar">
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">home</a>
+    </div>
+    <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1575477217"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1575477217"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+<script type="text/javascript" src="/js/search.js?1575477217"></script>
+
+  </div>
+
+  <div class="highlightable">
+    <ul id="tree1" class="topics">
+      
+
+      
+        
+
+ 
+  
+    
+    <li data-nav-id="/scratch/" title="Scratch" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/scratch/">
+          Scratch
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/scratch/ea-strategies/" title="Ea Strategies" class="dd-item ">
+        <a href="/scratch/ea-strategies/">
+        Ea Strategies
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/scratch/agile-arch/" title="Agile Architecture" class="dd-item active">
+        <a href="/scratch/agile-arch/">
+        Agile Architecture
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+    <li data-nav-id="/scratch/posts/" title="Posts" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/scratch/posts/">
+          Posts
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/scratch/posts/my-first-post/" title="My First Post" class="dd-item ">
+        <a href="/scratch/posts/my-first-post/">
+        My First Post
+        </a>
+    </li>
+     
+  
+ 
+
+          
+
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+
+        </ul>
+              
+    </li>
+  
+ 
+
+      
+        
+
+ 
+  
+    
+    <li data-nav-id="/log/" title="Log" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/log/">
+          Log
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/12-04/" title="12 04" class="dd-item ">
+        <a href="/log/12-04/">
+        12 04
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/12-03/" title="12 03" class="dd-item ">
+        <a href="/log/12-03/">
+        12 03
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-26/" title="11-26" class="dd-item ">
+        <a href="/log/11-26/">
+        11-26
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-25/" title="11-25" class="dd-item ">
+        <a href="/log/11-25/">
+        11-25
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-21/" title="11-21" class="dd-item ">
+        <a href="/log/11-21/">
+        11-21
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-18/" title="11-18" class="dd-item ">
+        <a href="/log/11-18/">
+        11-18
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-15/" title="11-15" class="dd-item ">
+        <a href="/log/11-15/">
+        11-15
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-14/" title="11-14" class="dd-item ">
+        <a href="/log/11-14/">
+        11-14
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-13/" title="11-13" class="dd-item ">
+        <a href="/log/11-13/">
+        11-13
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-08/" title="11-08" class="dd-item ">
+        <a href="/log/11-08/">
+        11-08
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-07/" title="11-07" class="dd-item ">
+        <a href="/log/11-07/">
+        11-07
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-06/" title="11-06" class="dd-item ">
+        <a href="/log/11-06/">
+        11-06
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-05/" title="11-05" class="dd-item ">
+        <a href="/log/11-05/">
+        11-05
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-04/" title="11-04" class="dd-item ">
+        <a href="/log/11-04/">
+        11-04
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/11-01/" title="11-01" class="dd-item ">
+        <a href="/log/11-01/">
+        11-01
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/log/10-30/" title="10-30" class="dd-item ">
+        <a href="/log/10-30/">
+        10-30
+        </a>
+    </li>
+     
+  
+ 
+
+          
+
+        </ul>
+              
+    </li>
+  
+ 
+
+      
+        
+
+ 
+  
+    
+    <li data-nav-id="/cheatsheets/" title="Cheatsheets" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cheatsheets/">
+          Cheatsheets
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/cheatsheets/vim/" title="Vim" class="dd-item ">
+        <a href="/cheatsheets/vim/">
+        Vim
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/cheatsheets/hugo/" title="Hugo" class="dd-item ">
+        <a href="/cheatsheets/hugo/">
+        Hugo
+        </a>
+    </li>
+     
+  
+ 
+
+          
+
+        </ul>
+              
+    </li>
+  
+ 
+
+      
+        
+
+ 
+  
+    
+    <li data-nav-id="/kloans/" title="Kloans" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/kloans/">
+          Kloans
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/kloans/kls-disbursements/" title="Kls Disbursements" class="dd-item ">
+        <a href="/kloans/kls-disbursements/">
+        Kls Disbursements
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/kloans/sandeep-seshadri/" title="Sandeep Seshadri" class="dd-item ">
+        <a href="/kloans/sandeep-seshadri/">
+        Sandeep Seshadri
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/kloans/cpi/" title="CPI" class="dd-item ">
+        <a href="/kloans/cpi/">
+        CPI
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/kloans/andrew-chin/" title="Andrew Chin" class="dd-item ">
+        <a href="/kloans/andrew-chin/">
+        Andrew Chin
+        </a>
+    </li>
+     
+  
+ 
+
+          
+
+        </ul>
+              
+    </li>
+  
+ 
+
+      
+        
+
+ 
+  
+    
+    <li data-nav-id="/nl/" title="Nl" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/nl/">
+          Nl
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/nl/horde/" title="Horde" class="dd-item ">
+        <a href="/nl/horde/">
+        Horde
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/nl/deflash/" title="Deflash" class="dd-item ">
+        <a href="/nl/deflash/">
+        Deflash
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/nl/core-audit/" title="Core Audit" class="dd-item ">
+        <a href="/nl/core-audit/">
+        Core Audit
+        </a>
+    </li>
+     
+  
+ 
+
+          
+            
+
+ 
+  
+    
+      <li data-nav-id="/nl/dynamic-structure-pages/" title="Dynamic Structure Pages" class="dd-item ">
+        <a href="/nl/dynamic-structure-pages/">
+        Dynamic Structure Pages
+        </a>
+    </li>
+     
+  
+ 
+
+          
+
+        </ul>
+              
+    </li>
+  
+ 
+
+      
+    </ul>
+
+    
+    <section id="shortcuts">
+      <ul>
+        
+        <li><a class="padding" href="https://github.com/benschw/notes"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+        
+      </ul>
+    </section>
+    
+
+  </div>
+</nav>
+
+
+
+
+
+      <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              <div>
+                <div id="top-bar">
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='edit' href="https://github.com/benschw/notes/edit/master/content/scratch/agile-arch.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">edit</span>
+                    </a>
+                  </div>
+                  
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/scratch/'>Scratch</a> > Agile Architecture
+          
+         
+          
+         
+          
+        
+                  </span>
+                </div>
+              </div>
+            </div>
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Agile Architecture
+            </h1>
+          
+
+        
+
+        
+
+
+
+
+
+
+
+<h2 id="individuals-and-interactions-over-processes-and-tools">Individuals and interactions over processes and tools</h2>
+
+<h3 id="shared-understanding-of-the-design">Shared understanding of the design</h3>
+
+<p>It is important for a dev team to have a shared understanding of the vision and
+goals of an application and its design.</p>
+
+<ul>
+<li>A common understanding of an application&rsquo;s design:
+
+<ul>
+<li>Helps to ensure that collaboration can occur with minimal friction</li>
+<li>Helps prevent false starts and wasted effort on divergent solutions</li>
+<li>Results in a leaner application that behaves more efficiently</li>
+</ul></li>
+</ul>
+
+<h4 id="method">Method</h4>
+
+<ul>
+<li>Maintain a high level design of the application that can be referenced. This design
+should be kept up to date as it evolves.</li>
+<li>Organize full team design sessions to help ensure that there is a shared understanding
+not just of how the application solves a problem, but why it does it in the way it does.</li>
+</ul>
+
+<h3 id="software-benefits-from-more-than-one-set-of-eyes">Software benefits from more than one set of eyes</h3>
+
+<p>More than one developer should understand each software component and be involved in the
+process of bringing it to life.</p>
+
+<ul>
+<li>Software built by more than one developer benefits from:
+
+<ul>
+<li>The multiple experiences and backgrounds of its authors</li>
+<li>Constant discussion of a problem helps prevent fragile implementations and
+development efforts that get &ldquo;stuck in a rut&rdquo;</li>
+<li>Over time, it is easier to share knowledge about the component and ensure
+there are people available to work on it</li>
+</ul></li>
+</ul>
+
+<h4 id="method-1">Method</h4>
+
+<ul>
+<li>Pair programming or shared ownership over each software component ensures
+that the software is benefiting from a high degree of collaboration.</li>
+<li>Code Reviews can&rsquo;t replace collaboration: a code review from an outside developer
+is useful for many reasons, but if the outside developer has an insuficient
+depth of knowledge regarding the piece of software they will be unable to effectively
+review how well the software meets its goals and the review may turn into a proofreading excercise.</li>
+</ul>
+
+<h2 id="working-software-over-comprehensive-documentation">Working software over comprehensive documentation</h2>
+
+<h3 id="test-your-design-early">Test your design early</h3>
+
+<p>Trying to determine how all the components of a system will interact to acheive
+a project&rsquo;s goals leads to a waterfall approach. This either necesitates
+rework when what we think we know changes, or else blind adherance to a plan without
+realizing that we are not longer solving problems in the most effective way.</p>
+
+<ul>
+<li>Regardless of how much up front work goes into planning an implementation, our
+understanding of the problem is likely to evolve and our software implementation
+should evolve along with it.</li>
+<li>Determining how something will work based on up front assumptions has dimishing returns
+while iterative planning and review allows for a design to be refined with
+the best possible information.</li>
+</ul>
+
+<h4 id="method-2">Method</h4>
+
+<ul>
+<li>Tracer bullet architecture (building out the scaffolding of the entire application
+before iterating on the implementation of its business logic) is one approach
+for ensuring that software works from day-one, can be grown and refined without
+deviating from the project&rsquo;s goals, and that risk isn&rsquo;t unnecessarily deferred.</li>
+<li>Build software iteratively rather than incrementally. (Compare to a printer
+vs. an artist: A printer creates a picture incrementally by drawing line by line
+starting at the top. An artist creates a picture iteratively by sketching the outline,
+then shading in the detail, and finally adding color and other final touches.)
+
+<ul>
+<li>With an iterative approach, designs and implementations can easily evolve
+as more is known. With an incremental approach, problems aren&rsquo;t identified
+until later and course corrections require more rework.</li>
+</ul></li>
+</ul>
+
+<h2 id="customer-collaboration-over-contract-negotiation">Customer collaboration over contract negotiation</h2>
+
+<h3 id="shared-understanding-of-business-objectives">Shared understanding of business objectives</h3>
+
+<p>It is important for a team to have a shared understanding with the business
+regarding the vision and goals of a project.</p>
+
+<ul>
+<li>A common understanding of the business functions, domain knowledge, and nomenclature used to describe an application:
+
+<ul>
+<li>Ensures that the right features are built</li>
+<li>Enables developers to provide feedback regarding the assumptions of the business</li>
+<li>Facilitates an evolving solution that better meets the underlying goals of the application</li>
+</ul></li>
+</ul>
+
+<h4 id="method-3">Method</h4>
+
+<ul>
+<li>Make the development team aware of why they are building an application, not just what it should do</li>
+<li>Promote discussion between development and the business regarding requirements</li>
+<li>Collaborate on building a roadmap and requirements for beta, mvp, and beyond</li>
+<li>Perform regular demos to ensure development is tracking with the business vision</li>
+</ul>
+
+<h2 id="responding-to-change-over-following-a-plan">Responding to change over following a plan</h2>
+
+<h3 id="build-based-on-feedback-from-the-system">Build based on feedback from the system</h3>
+
+<p>As software is built, our understanding of how it works changes and up front planning
+will likely diminish in relevance.</p>
+
+<ul>
+<li>The plan for building an application should evolve with our understanding of how our
+software is actually performing. As we learn more about the systems we are building
+our design and priorities should be updated to accomodate this new information.</li>
+<li>Software should be built to facilitate early feedback:
+
+<ul>
+<li>Understanding early how a design or integration plan stands up to actual
+implementation makes it easier to course correct and less likely to result in
+overly cumbersome interfaces that satisfy &ldquo;what we thought we needed&rdquo;
+instead of &ldquo;what we actually need&rdquo;</li>
+<li>When coupled components are developed separately and to a specification,
+the likelyhood that an impedence mismatch will be introduced and allowed to
+grow unchecked increases.</li>
+</ul></li>
+</ul>
+
+<h4 id="method-4">Method</h4>
+
+<ul>
+<li>Regular backlog grooming with design discussions ensure that designs and requirements
+are kept up to date with current information</li>
+<li>Implement continuous integration and continuous deployment:
+
+<ul>
+<li>Prevents drift in integration goals by shedding light on impedence mismatches quickly</li>
+<li>Brings design failures to light early so they can be corrected without creating
+an excess of rework.</li>
+<li>Brings design failures to light early so they can be corrected rather than
+being allowed to remain and solved for with work-arounds.</li>
+<li>Bugs are caught more quickly (though this is the least important benefit of CI/CD)</li>
+</ul></li>
+<li>Effective use of automated testing facilitates more frequent integration and thus
+faster and more frequent feedback</li>
+</ul>
+
+<h3 id="pay-special-attention-to-integrations-with-outside-software">Pay special attention to integrations with outside software</h3>
+
+<p>The adoption of new technologies and integration with vendors is often the biggest
+source of risk for a project. In addition to bringing a design to life, it must
+be integrated with a system that may not behave in a way that is expected.</p>
+
+<ul>
+<li>The full cost of integrating with a vendor or new technology can&rsquo;t be
+fully understood up front and won&rsquo;t be until completed.</li>
+<li>If the assumptions about a vendor or new technology prove to be wrong, a new
+solution may need to be found.</li>
+</ul>
+
+<h4 id="method-5">Method</h4>
+
+<ul>
+<li>Integration with a vendor or new technology should be identified as higher
+risk and performed early. This will:
+
+<ul>
+<li>Remove the unknown cost of integration as soon as possible</li>
+<li>Bring the domain knowledge into the team&rsquo;s shared understanding to ensure
+that development doesn&rsquo;t procede with a blind spot</li>
+<li>Give adequate time to go back to the drawing board if the vendor or
+technology doesn&rsquo;t work out</li>
+</ul></li>
+<li>Use an existing technology instead. Does the problem being solved with a new
+technology really warrant the cost and risk of adopting a new technology?</li>
+</ul>
+
+<h2 id="other">Other</h2>
+
+<h3 id="optimize-for-the-platform-not-the-local-problem">Optimize for the platform, not the local problem</h3>
+
+<p>The benefits of the consistency acheived through shared patterns and technologies
+often outweigh the benefits of a software design that is optimized for a specific
+problem.</p>
+
+<ul>
+<li>Consistent patterns, techniques, and technologies promote:
+
+<ul>
+<li>Systems that are understood and supportable by more people</li>
+<li>Less automation and implementation work to get off the ground</li>
+<li>Less risk from integrating with new software</li>
+<li>Systems that can more easily be kept up to date</li>
+</ul></li>
+</ul>
+
+<h4 id="method-6">Method</h4>
+
+<ul>
+<li>Determine if a similar problem has already been solved by another team</li>
+<li>When adopting a new technology, compare the pros and cons of using an existing
+technology. Are you accurately accounting for all the non-functional costs of
+bringing in new software?</li>
+</ul>
+
+
+<footer class="footline" >
+</footer>
+
+
+        
+        </div> 
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1575477217"></script>
+    <script src="/js/perfect-scrollbar.min.js?1575477217"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1575477217"></script>
+    <script src="/js/jquery.sticky.js?1575477217"></script>
+    <script src="/js/featherlight.min.js?1575477217"></script>
+    <script src="/js/highlight.pack.js?1575477217"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1575477217"></script>
+    <script src="/js/learn.js?1575477217"></script>
+    <script src="/js/hugo-learn.js?1575477217"></script>
+
+    <link href="/mermaid/mermaid.css?1575477217" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1575477217"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kloans on notes</title>
+    <link>/kloans/</link>
+    <description>Recent content in Kloans on notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 Nov 2019 09:24:19 -0600</lastBuildDate>
+    
+	<atom:link href="/kloans/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kls Disbursements</title>
+      <link>/kloans/kls-disbursements/</link>
+      <pubDate>Tue, 12 Nov 2019 16:17:37 -0600</pubDate>
+      
+      <guid>/kloans/kls-disbursements/</guid>
+      <description>11-07 kls disbursements brd meeting  onus transactions only fi v product level?  product level offers more flexibility, probably necessary  track fees, insurance etc regardless of &amp;ldquo;enabled&amp;rdquo;  implications for roll out? data input requirement?  tracking insurance etc. fees  fees_gl_account_number + fee_description uniquely targets a fee multiple fee types may share a single gl  ach (on us) posting  on failure, manually fix (in core).</description>
+    </item>
+    
+    <item>
+      <title>Sandeep Seshadri</title>
+      <link>/kloans/sandeep-seshadri/</link>
+      <pubDate>Tue, 12 Nov 2019 16:15:44 -0600</pubDate>
+      
+      <guid>/kloans/sandeep-seshadri/</guid>
+      <description>11-04  language  php services java services ~10 lots of java based lambdas  main components  kloans-loan batch loan importer  secondary components  reporting metro2  main concepts
+ snapshots  any time an event happens, a snapshot is created: whats your balance, days delinquent, interest (loan snapshot available)  initialization, payment, fee adjustment vanilla loan would have initialization + monthly payment events delinquent payment would end up being daily  loan-term-snapshot - for this range, this is your installment amount  Batch  recurring payments, delinquency, (design) https://confluence.</description>
+    </item>
+    
+    <item>
+      <title>CPI</title>
+      <link>/kloans/cpi/</link>
+      <pubDate>Tue, 12 Nov 2019 16:15:08 -0600</pubDate>
+      
+      <guid>/kloans/cpi/</guid>
+      <description>11-13 - meeting (Ben Yang)  BRD https://docs.google.com/document/d/1V3Xk4jCIUfdM4x6bRqaNEz89_vu6dUQTwzN-CWiLtlk/edit?usp=sharing see faqs to get caught up bulk data api integration
+ https://confluence.bancvue.com/display/Architecture/Decision+-+How+to+serve+up+reporting+or+bulk+data+from+the+KLS  kloans dat layer (DOT)
+ configuration info provided in KLS to configure external API details
+ all batch refresh daily probably (usually) configured to run weekly  day / time of week   pull loan data
+ full collection, or ids then loop and query  map kls data to cpi vendors</description>
+    </item>
+    
+    <item>
+      <title>Andrew Chin</title>
+      <link>/kloans/andrew-chin/</link>
+      <pubDate>Tue, 12 Nov 2019 16:14:51 -0600</pubDate>
+      
+      <guid>/kloans/andrew-chin/</guid>
+      <description>11-12  web-gateway replacement discussion  java/spring php/laravel single deploy (fliglio style) or duel (s3/k8s, spring style) java models / clients largely exist for kloans-loan already   process  trs missing acceptance criteria / non-happy path  epic  BRD  requirements in given/when/then acceptance criteria  user stories technical design subtasks for technical tasks estimate / review / execute    11-05  BSI - smaller solution powered by third party solution</description>
+    </item>
+    
+  </channel>
+</rss>

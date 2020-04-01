@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scratch on notes</title>
+    <link>/scratch/</link>
+    <description>Recent content in Scratch on notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 03 Nov 2019 21:45:14 -0600</lastBuildDate>
+    
+	<atom:link href="/scratch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agile Architecture</title>
+      <link>/scratch/agile-arch/</link>
+      <pubDate>Fri, 15 Nov 2019 21:45:14 -0600</pubDate>
+      
+      <guid>/scratch/agile-arch/</guid>
+      <description>Individuals and interactions over processes and tools Shared understanding of the design It is important for a dev team to have a shared understanding of the vision and goals of an application and its design.
+ A common understanding of an application&amp;rsquo;s design:  Helps to ensure that collaboration can occur with minimal friction Helps prevent false starts and wasted effort on divergent solutions Results in a leaner application that behaves more efficiently   Method  Maintain a high level design of the application that can be referenced.</description>
+    </item>
+    
+    <item>
+      <title>Ea Strategies</title>
+      <link>/scratch/ea-strategies/</link>
+      <pubDate>Tue, 03 Dec 2019 13:32:49 -0600</pubDate>
+      
+      <guid>/scratch/ea-strategies/</guid>
+      <description>(from Mark Richards&amp;rsquo;s &amp;ldquo;EA fundamentals&amp;rdquo; class)
+EA Strategies &amp;amp; Standards  Enterprise Architects (standards) Solutions Architects (business unit)
+centralized: prescriptive classic alternatives decentralized: distributed durable interface
+  Centralized prescriptive apprived standards
+ pros  reduce complexity reduce decision time reusable assets low cost  cons  may not be a fit hard to gain concensus IT dissatifcation user dissatisfaction strong governance needed   classic Alternatives multiple approved standards</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,3 +1,25 @@
-baseURL = "http://recipes.fligl.io/"
-languageCode = "en-us"
-title = "My New Hugo Recipes Site"
+
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "notes"
+theme = "learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[params]
+  editURL = "https://github.com/benschw/recipe/edit/master/content/"
+  description = "Recipes"
+  author = "Ben Schwartz"
+  showVisitedLinks = false
+  disableBreadcrumb = false
+  disableNextPrev = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[[menus.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub"
+url = "https://github.com/benschw/recipe"
+
