@@ -1,0 +1,3 @@
+baseURL = "http://recipes.fligl.io/"
+languageCode = "en-us"
+title = "My New Hugo Recipes Site"
