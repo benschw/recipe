@@ -29,6 +29,5 @@ draft: false
 - slash 1/4in slices in top to allow stretching
 - place in dutch oven, tuck ice cubes under parchment & sprinkle water on top
 - Bake covered for 25min
-- Uncover, bake 15min
-- cool on rack
+- Uncover, bake 15min, cool on rack
 
