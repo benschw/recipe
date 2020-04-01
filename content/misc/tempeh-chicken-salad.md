@@ -1,0 +1,26 @@
+---
+title: Tempeh Chicken Salad
+date: 2019-11-01T16:21:22-05:00
+---
+
+
+theheartyvegan.com
+
+### Ingredients
+
+- 1 block tempeh, cut into 1/2" cubes
+- 2 tsp mustard
+- 2 tsp tamari
+- 1 clove garlic, mashed
+- 2 green onion stalks, chopped
+- 1/2 c mayonaise
+- 1 pickle, diced
+- 1 celery stalk, diced
+2 tbsp minced parsley
+
+
+### Instructions
+
+- Steam tempeh 15 minutes then let cool in a large bowl
+- mix in all remaining ingredients and chill for 2 hrs
+
