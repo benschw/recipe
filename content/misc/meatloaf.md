@@ -4,6 +4,8 @@ date: 2020-06-17T09:03:40-05:00
 draft: false
 ---
 
+based on https://natashaskitchen.com/meatloaf-recipe/
+
 ### Meatloaf Ingredients:
 - 2 lbs ground beef 85% or 90% lean
 - 1 med onion finely chopped
