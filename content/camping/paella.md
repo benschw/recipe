@@ -11,12 +11,12 @@ based on:
 ## Ingredients
 - 2 tbsp olive oil
 - 1/2 c rice
-- 1/2 yellow onion, diced
+- 1/3 yellow onion, diced
 - 1/2 red bell pepper,diced
 - 2 cloves garlic
-- 1/2 can diced tomatoes (10oz roma tomatoes, cut in half)
+- 1/2 can diced tomatoes (2-3 roma tomatoes, cut in half)
 - 1 1/2 c veg stock
-- 1/2 lb chicken
+- 1/4 lb chicken (optionally browned on grill first)
 - 4 oz chorizo
 - 1/2 c frozen peas
 - 1 tbsp paprika
@@ -43,9 +43,6 @@ based on:
 	- place on the grill, skin side down
 	- grill until charred, just a few minutes
 	- remove, cool enough to handle, and dice
-- chicken (optional par cook step)
-	- coat/marinate chicken in the olive oil used to coat the tomatoes
-	- grill for a few minutes: it will cook with paella, just getting a little char here
 
 - Build up the sofrito base
 	- heat olive oil and saute chorizo for about 5 minutes
@@ -57,4 +54,9 @@ based on:
 - Cook
 	- let cook un disturbed for about 30 minutes, rotating the pan occasionally to avoid hot spots
 	- (mix in seafood if using after about 10 minutes)
+
+
+notes:
+- I added liquid as it cooked to keep from drying out, but ended up not getting a crust on the bottom
+- I used less of a few ingredients to make sure it fit in the pan
 
